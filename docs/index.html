@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <img src="imagenes/logo.png" class="logo">
+      <div class="tituloPrincipal">
+        <h1>Encriptar/Desencriptar mensaje</h1>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="contenedor">
+        <div class="entrada">
+          <textarea id="entrada" class="informacion" cols="20" rows="10" autofocus></textarea>
+          <div class="restricciones">
+            <ul>
+              <li>Solo minusculas</li>
+              <li>Sin acentos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="botones">
+          <!--<button id="encriptar" class="boton">
+            Encriptar
+          </button>
+
+          <button id="desencriptar" class="boton">
+              Desencriptar
+          </button>-->
+          <div class="botonEncriptar">
+            <a href="#" onclick="encriptarTexto()" class="btn-neon">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+              <span id="span4"></span>
+              Encriptar
+            </a>
+          </div>
+
+          <div class="botonDesencriptar">
+            <a href="#" onclick="desencriptarTexto()" class="btn-neon">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+              <span id="span4"></span>
+              Desencriptar
+            </a>
+          </div>
+        </div>
+
+        <div class="salida">
+          <textarea id="salida" class="informacion" cols="20" rows="10"></textarea>
+          <div class="botonCopiar">
+            <a href="#" onclick="copiarTexto()" class="btn-neon">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+              <span id="span4"></span>
+              Copiar
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!--<footer>
+      <div class="pie">
+        <img src="imagenes/linkedin.png" class="imagen">
+        <img src="imagenes/github.png" class="imagen">
+      </div>
+    </footer>-->
+
+    <script src="js/encriptar.js"> </script>
+  </body>
+</html>
